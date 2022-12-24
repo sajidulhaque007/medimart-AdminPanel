@@ -1,0 +1,136 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.footer{
+      display: flex;
+      justify-content: center;
+      margin-left: 510px;
+      margin-right: 414px;
+      margin-top: 175px;
+      border-radius: 10px;
+      color: whitesmoke;
+}
+body {
+    background: url("../img/bg2.png") no-repeat center center fixed;
+    background-size: cover; 
+}
+
+.wrapper {
+    max-width: 350px;
+    min-height: 500px;
+    /* margin: 80px auto; */
+    margin-left: 80rem;
+    margin-top: 10rem;
+    padding: 40px 30px 30px 30px;
+    background-color: #ecf0f3;
+    border-radius: 20px;
+}
+
+.logo {
+    width: 80px;
+    margin: auto;
+}
+
+.logo img {
+    height: 45px;
+    margin-left: -30px;
+}
+
+.wrapper .name {
+    font-weight: 550;
+    font-size: 1.4rem;
+    padding-left: 50px;
+    color: black;
+    font-family: poppins;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    margin-left: -30px;
+}
+
+.wrapper .form-field input {
+    background: none;
+    color: #666;
+    padding: 10px 15px 10px 10px;
+    border: 1px solid rgba(102, 102, 102, 0.35);
+    border-radius: 12px;
+    margin-left: -1.5rem;
+    width: 320px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+    
+}
+
+.wrapper .form-field {
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    /* box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff; */
+}
+
+.wrapper .form-field .fas {
+    color: #555;
+}
+
+.wrapper .btn {
+    border: none;
+    width: 320px;
+    height: 40px;
+    background-color: #2148C0;
+    color: #fff;
+    border-radius: 15px;
+    letter-spacing: 1.3px;
+    border-radius: 12px;
+    margin-left: -0.9rem;
+}
+
+.wrapper .btn:hover {
+    background-color: #039BE5;
+}
+
+.wrapper a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #03A9F4;
+}
+
+.wrapper a:hover {
+    color: #039BE5;
+}
+
+@media (max-width: 400px) {
+    .wrapper {
+        margin: 100px 12px;
+        padding: 46px 17px 18px 30px;
+    }
+    .footer{
+        margin: 100px 12px;
+        padding: 46px 17px 18px 30px;
+    }
+}
+ @media(max-width: 480px) {
+    .wrapper {
+        margin: 100px 30px;
+        padding: 46px 17px 18px 30px;
+    }
+    .footer{
+        margin: 100px 30px;
+        padding: 46px 17px 18px 30px;
+    }
+}
+
+@media(max-width: 810px) {
+    .wrapper {
+        margin: 100px auto;
+        padding: 46px 17px 18px 30px;
+    }
+    .footer{
+        margin: 100px auto;
+        padding: 46px 17px 18px 30px;
+    }
+}

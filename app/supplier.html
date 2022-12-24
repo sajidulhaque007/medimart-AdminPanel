@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
+    <meta name="author" content="ThemePixels">
+    <title>Medimart</title>
+    <link href="../lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="../lib/Ionicons/css/ionicons.css" rel="stylesheet">
+    <link href="../lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.2.3/css/buttons.dataTables.min.css">
+  </head>
+  <body>
+    <!-- START: LEFT PANEL -->
+    <div class="sl-logo"><a href="index.html"> <img src="../img/logo.png" alt=""></a></div>
+    <div class="sl-sideleft">      
+      <div class="sl-sideleft-menu">
+        <a href="index.html" class="sl-menu-link">
+          <div class="sl-menu-item">
+            <i class="menu-item-icon ion-ios-monitor tx-22"></i>
+            <span class="menu-item-label" style="color:#B5AFC7 ;">Dashboard</span>
+          </div>
+        </a>
+        <a href="#" class="sl-menu-link active show-sub">
+          <div class="sl-menu-item">
+            <i class="menu-item-icon ion-android-bicycle tx-20"></i>
+            <span class="menu-item-label" >Supplier</span>
+            <i class="menu-item-arrow fa fa-angle-right"></i>
+          </div>
+        </a>
+        <ul class="sl-menu-sub nav flex-column">
+          <li class="nav-item"><a href="supplier.html" class="nav-link active">Supplier List</a></li>
+          <li class="nav-item"><a href="supplier2.html" class="nav-link">Supplier 2</a></li>
+        </ul>
+        <a href="#" class="sl-menu-link">
+          <div class="sl-menu-item">
+            <i class="menu-item-icon ion-ios-cart tx-20"></i>
+            <span class="menu-item-label" style="color: #B5AFC7;">Retailer</span>
+            <i class="menu-item-arrow fa fa-angle-right"></i>
+          </div>
+        </a>
+        <ul class="sl-menu-sub nav flex-column">
+          <li class="nav-item"><a href="retailer.html" class="nav-link">Retailer 1</a></li>
+          <li class="nav-item"><a href="retailer2.html" class="nav-link">Retailer 2</a></li>
+        </ul>
+        <a href="#" class="sl-menu-link">
+          <div class="sl-menu-item">
+            <i class="menu-item-icon ion-cube tx-20"></i>
+            <span class="menu-item-label" style="color: #B5AFC7;">Product</span>
+            <i class="menu-item-arrow fa fa-angle-right"></i>
+          </div>
+        </a>
+        <ul class="sl-menu-sub nav flex-column">
+          <li class="nav-item"><a href="product.html" class="nav-link">Product 1</a></li>
+          <li class="nav-item"><a href="product2.html" class="nav-link">Product 2</a></li>
+        </ul>
+        <a href="#" class="sl-menu-link">
+          <div class="sl-menu-item">
+            <i class="menu-item-icon ion-ios-keypad tx-20"></i>
+            <span class="menu-item-label" style="color: #B5AFC7;">Category</span>
+            <i class="menu-item-arrow fa fa-angle-right"></i>
+          </div>
+        </a>
+        <ul class="sl-menu-sub nav flex-column">
+          <li class="nav-item"><a href="category.html" class="nav-link">Category 1</a></li>
+          <li class="nav-item"><a href="category2.html" class="nav-link">Category 2</a></li>
+        </ul>
+        <a href="#" class="sl-menu-link">
+          <div class="sl-menu-item">
+            <i class="menu-item-icon icon ion-clipboard tx-20"></i>
+            <span class="menu-item-label" style="color: #B5AFC7;">Orders</span>
+            <i class="menu-item-arrow fa fa-angle-right"></i>
+          </div>
+        </a>
+        <ul class="sl-menu-sub nav flex-column">
+          <li class="nav-item"><a href="orders.html" class="nav-link">Orders</a></li>
+        </ul>
+        <a href="#" class="sl-menu-link">
+          <div class="sl-menu-item">
+            <i class="menu-item-icon icon ion-ios-people tx-20"></i>
+            <span class="menu-item-label" style="color: #B5AFC7;">Support</span>
+            <i class="menu-item-arrow fa fa-angle-right"></i>
+          </div>
+        </a>
+        <ul class="sl-menu-sub nav flex-column">
+          <li class="nav-item"><a href="support.html" class="nav-link">Support Team</a></li>
+        </ul>
+        <a href="#" class="sl-menu-link">
+          <div class="sl-menu-item">
+            <i class="menu-item-icon icon ion-speakerphone tx-20"></i>
+            <span class="menu-item-label" style="color: #B5AFC7;">Promotions</span>
+            <i class="menu-item-arrow fa fa-angle-right"></i>
+          </div>
+        </a>
+        <ul class="sl-menu-sub nav flex-column">
+          <li class="nav-item"><a href="promotions.html" class="nav-link">Promos</a></li>
+        </ul>
+      </div>
+      <br>
+    </div>
+    <!-- END: LEFT PANEL -->
+    <!-- START: HEAD PANEL -->
+    <div class="sl-header">
+      <div class="sl-header-left">
+        <div class="navicon-left hidden-md-down"><a id="btnLeftMenu" href=""><i class="icon ion-navicon-round"></i></a></div>
+        <div class="navicon-left hidden-lg-up"><a id="btnLeftMenuMobile" href=""><i class="icon ion-navicon-round" style="color: #B5AFC7;"></i></a></div>
+      </div>
+      <div class="sl-header-right">
+        <div class="navicon-right">
+          <a id="btnRightMenu" href="" class="pos-relative">
+            <i class="icon ion-ios-bell"></i>
+            <span class="square-8 bg-warning"></span>
+          </a>
+        </div>
+        <nav class="nav">
+          <div class="dropdown">
+            <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
+              <span class="logged-name" ><p class="mg-b-0 tx-medium tx-gray-800 tx-13">Sajidul Haque</p></span>
+              <img src="../img/1.png" class="wd-32 rounded-circle" alt="">
+            </a>
+            <div class="dropdown-menu dropdown-menu-header wd-200">
+              <ul class="list-unstyled user-profile-nav">
+                <li><a href=""><i class="icon ion-ios-person-outline"></i> Edit Profile</a></li>
+                <li><a href=""><i class="icon ion-ios-gear-outline"></i> Settings</a></li>
+                <li><a href=""><i class="icon ion-power"></i> Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- END: HEAD PANEL -->
+    <!-- START: RIGHT PANEL -->
+    <div class="sl-sideright">
+     <div class="tab-content">
+       <div class="tab-pane pos-absolute a-0 mg-t-60 active" id="messages" role="tabpanel">
+         <div class="media-list">
+           <a href="" class="media-list-link">
+             <div class="media">
+               <img src="../img/1.png" class="wd-40 rounded-circle" alt="">
+               <div class="media-body">
+                 <p class="mg-b-0 tx-medium tx-gray-800 tx-13">Sajid Shishir</p>
+                 <span class="d-block tx-11 tx-gray-500">2 minutes ago</span>
+                 <p class="tx-13 mg-t-10 mg-b-0">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring.</p>
+               </div>
+             </div>
+           </a>         
+         </div>
+         <div class="pd-15">
+           <a href="" class="btn btn-secondary btn-block bd-0 rounded-0 tx-10 tx-uppercase tx-mont tx-medium tx-spacing-2">View More Messages</a>
+         </div>
+       </div>
+     </div>
+   </div>
+    <!-- END: RIGHT PANEL -->
+    <!-- START: MAIN PANEL -->
+    <div class="sl-mainpanel"> 
+      <div class="sl-pagebody">
+        <div class="card pd-20 pd-sm-40">
+          <h3 style="font-weight: 100;font-size: 35px;color: #4055F7;">Supplier List</h3>
+          <hr style="width:100%;text-align:left;margin-left:0">      
+          <div>
+            <table class="table table-bordered " id="myTable" style="font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 10 ;
+            font-size: 15px; background-color: white;
+            ">
+              <thead>
+                <tr style="color:#4055F7;">
+                  <th>SL</th>
+                  <th>Owner</th>
+                  <th>Business Name</th>
+                  <th>Email Address</th>
+                  <th>Mobile</th>
+                  <th>Address</th>
+                  <th>Joining Date</th>
+                  <th>Total Sale</th>
+                  <th>Total Order</th>
+                  <th>Total Product</th>
+                  <th>Documents</th>
+                  <th>Action</th>
+                  <th>View</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>01</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i>
+                  </td>
+                  <td style="color:green;"><strong>Verified</strong></td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td style="color:green;"><strong>Verified</strong></td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>03</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td>Verified</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>04</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td style="color:green;"><strong>Verified</strong></td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>05</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td style="color:red;"><strong>Block</strong></td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>06</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td style="color:green;"><strong>Verified</strong></td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>07</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td>Verified</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>08</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td style="color:green;"><strong>Verified</strong></td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>09</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td>Verified</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td>Verified</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td>Verified</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td>Verified</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td>Verified</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td>Verified</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td>Verified</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td>Verified</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td>Verified</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td>Verified</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td>Verified</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td>Verified</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <td>21</td>
+                  <td>Masud Rana</td>
+                  <td>AKH Enterprise</td>
+                  <td>Masud@gmail.com</td>
+                  <td>01654897196</td>
+                  <td>Road-12,Sector-10,Uttara,Dhaka-1230</td>
+                  <td>10 Jan 2022</td>
+                  <td>30,000</td>
+                  <td>10</td>
+                  <td>450</td>
+                  <td><i class="fa fa-file-text" aria-hidden="true"></i></td>
+                  <td>Verified</td>
+                  <td><i class="fa fa-eye" aria-hidden="true"></i></td>
+                </tr>             
+              </tbody>
+            </table>
+          </div>
+        </div>  
+      </div>
+        <footer class="sl-footer">
+          <div class="footer-left">
+            <div class="mg-b-2">Copyright &copy; Medimart 2022. All Rights Reserved.</div>
+          </div>
+        </footer>
+     </div>
+    <!-- END: MAIN PANEL -->
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/popper.js/popper.js"></script>
+    <script src="../lib/bootstrap/bootstrap.js"></script>
+    <script src="../lib/jquery-ui/jquery-ui.js"></script>
+    <script src="../lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="../lib/jquery.sparkline.bower/jquery.sparkline.min.js"></script>
+    <script src="../lib/d3/d3.js"></script>
+    <script src="../lib/chart.js/Chart.js"></script>
+    <script src="../lib/Flot/jquery.flot.js"></script>
+    <script src="../lib/Flot/jquery.flot.pie.js"></script>
+    <script src="../lib/Flot/jquery.flot.resize.js"></script>
+    <script src="../lib/flot-spline/jquery.flot.spline.js"></script>
+    <script src="../js/starlight.js"></script>
+    <script src="../js/ResizeSensor.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.3/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.2.3/js/buttons.print.min.js"></script>
+    <script>
+           $(document).ready(function(){
+                $('#myTable').DataTable({
+                    dom: 'lBfrtip',
+                    buttons: [
+                        'copy', 'csv', 'excel', 'pdf', 'print'
+                        ]
+                    });
+                 });
+    </script>
+  </body>
+</html>
